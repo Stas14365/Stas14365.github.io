@@ -1,0 +1,79 @@
+<!DOCTYPE.html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewort" content="width=device-width, initial-scale=1.0">
+        <title>Document about New Year</title>
+        <style>
+           body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #56afea;
+    background-image: url(snejinka.png);
+    background-repeat: repeat;
+    text-align: center;
+}
+  
+div {
+    background-color: #f6f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 700px;
+    margin: 50px auto;
+}
+  
+h1 {
+    color: #d70606;
+    font-size: 40px;
+    font-style: italic;
+}
+  
+img {
+    width: 550px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+p {
+    font-size: larger;
+}
+
+button {
+    font-size: 16px;
+}
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Hay New Year, Duds!</h1>
+            <img src="./grandfather.jpg">
+    
+        <button id="PlayButton" onclick="playMusic()">Play Music</button>
+        
+        <audio id="audio">
+            <source src="veselie-jingle-bells.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    
+        <script>
+            // const layButton = document.getElementById('layButton');
+            // const audio = document.getElementById('audio');
+    
+            // layButton.addEventListener('click', () => {
+            //     if (audio.aused) {
+            //         audio.lay();
+            //         layButton.textContent = 'ause Music';
+            //     } else {
+            //         audio.ause();
+            //         layButton.textContent = 'lay Music';
+            //     }
+            // });
+            function playMusic() {
+                let audio = document.getElementById("audio");
+                audio.play();
+            }
+        </script>
+    </body>
+    </html>
+    
